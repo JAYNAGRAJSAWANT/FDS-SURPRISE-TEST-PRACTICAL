@@ -1,0 +1,27 @@
+# SURPRISE TEST PRACTICAL
+
+print("Salary of an employee")
+input("Enter employee name :")
+print("1.Manager")
+print("2.team leader")
+print("3.member")
+a=int(input("designation :"))
+if a==1:
+  salary=2000
+elif a==2:
+  salary= 1800
+elif a==3:
+  salary=1500
+else:
+  print("Enter correct number ")
+present=int(input("Enter present days of employee  : "))
+if present>31:
+  print("Enter correct value" )
+basic=float(salary*present)
+print("salary without overtime is:",basic)
+
+overtime=float(input("how many days of overtime employee woeked : "))
+overtime=int(overtime*salary)
+print("salary with overtime :", overtime)
+total=int(basic + overtime)
+print("Total/-",total)
